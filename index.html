@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eggsploit - A PullQuest</title>
+  <meta name="description" content="Eggsploit is a PullQuests scavenger hunt. Club leaders hide bugs and easter eggs in websites. Members hunt them down and submit PRs.">
+  <meta property="og:title" content="Eggsploit - Find the Eggs. Ship the Fix.">
+  <meta property="og:description" content="A scavenger hunt for code. Find what's wrong. Fix it. Ship the PR.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<div class="glitchbar"></div>
+
+<nav class="nav" id="menubar">
+  <a class="navbrand" href="#top">
+    <img class="eggiconlol" src="/assets/logo.png" alt="Eggsploit logo" style="width:60px; height:60px;">
+    <span class="title">Eggsploit</span>
+  </a>
+
+  <button class="menutoggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlinks">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="navlinks" id="navlinks">
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#examples">Examples</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="https://hackclub.com/slack" target="_blank" rel="noopener noreferrer" class="navcta">Join Slack</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div class="heroleft">
+    <p class="eyebrow">Hack Club · PullQuests</p>
+    <h1 style="font-weight: 900; letter-spacing: -0.03em">
+      <span class="glitchtext" data-text="Find the Eggs.">Find the Eggs.</span><br>
+      <span class="heroaccent">Ship the Fix.</span>
+    </h1>
+    <p class="herolead">
+      Club leader builds a website with hidden bugs and easter eggs on purpose.
+      Your job? Find them. Fix them. Submit PRs. That's it :)
+    </p>
+    <div class="btnrow">
+      <a href="#how" class="btn btnprimary">How It Works</a>
+      <a href="https://hackclub.enterprise.slack.com/archives/C0ALHGAASLV" target="_blank" class="btn btnoutline">Join #pull-quests</a>
+    </div>
+    <p style="font-size:13px; color:#555; margin-top:14px">Part of the PullQuests program.</p>
+  </div>
+  <div class="heroright" aria-hidden="true">
+    <div class="terminalbox">
+      <div class="terminalbar">
+        <span class="dot" style="background:#ec3750"></span>
+        <span class="dot" style="background:#ff8c37"></span>
+        <span class="dot" style="background:#33d6a6"></span>
+        <span class="termlabel">eggsploit v1.0</span>
+      </div>
+      <pre class="terminalbody"><code><span class="tdim">$</span> <span class="tcmd">eggsploit scan</span> --deep
+<span class="tdim">[</span><span class="twarn">!</span><span class="tdim">]</span> scanning for hidden easter eggs and bugs...
+<span class="tdim">[</span><span class="tok">+</span><span class="tdim">]</span> egg_01: <span class="tstr">broken_button</span>
+<span class="tdim">[</span><span class="tok">+</span><span class="tdim">]</span> egg_02: <span class="tstr">css_conflict</span>
+<span class="tdim">[</span><span class="tok">+</span><span class="tdim">]</span> egg_03: <span class="tstr">hidden_in_console</span>
+<span class="tdim">[</span><span class="twarn">?</span><span class="tdim">]</span> egg_04: <span class="tstr">???</span>
+<span class="tdim">$</span> <span class="tblink">_</span></code></pre>
+    </div>
+  </div>
+</header>
+
+<div class="scanline" style="margin-top:-2px"></div>
+
+<main>
+  <section class="section" id="how">
+    <div class="sectioninner">
+      <div class="sectionlabel">How It Works</div>
+      <div class="steps">
+        <div class="stepcard">
+          <div class="stepid">01</div>
+          <h3>Leader Builds</h3>
+          <p>Club leader creates a website and hides bugs, easter eggs, and intentionally broken things inside it. CSS conflicts, wrong links, console messages, hidden elements. Whatever they want.</p>
+          <div class="stepnum">01</div>
+        </div>
+        <div class="stepcard">
+          <div class="stepid">02</div>
+          <h3>Members Hunt</h3>
+          <p>Club members open the site and start exploring. Click everything. Inspect the source. Check the console. Find whatever is wrong or hidden.</p>
+          <div class="stepnum">02</div>
+        </div>
+        <div class="stepcard">
+          <div class="stepid">03</div>
+          <h3>Submit PRs</h3>
+          <p>Found a bug? Fork the repo. Fix it. Open a Pull Request. Found an easter egg? Document it in your PR description.</p>
+          <div class="stepnum">03</div>
+        </div>
+        <div class="stepcard">
+          <div class="stepid">04</div>
+          <h3>Get Rewarded</h3>
+          <p>Merged PRs earn grants through PullQuests. The more you find and fix, the more you get. Creative finds count extra.</p>
+          <div class="stepnum" style="color: rgba(236,55,80,0.06)">04</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="scanline"></div>
+
+  <section class="sectionalt" id="examples">
+    <div class="sectioninner">
+      <div class="sectionlabel">Examples</div>
+      <p class="desctext">Leaders this part is technically for you, You build the site, hide the eggs. Here are some ideas for what to plant...</p>
+
+      <div class="ideasgrid">
+        <div class="ideacard">
+          <span class="ideatag">CSS</span>
+          <div class="ideatitle">Conflicting styles</div>
+          <p>Two rules that fight each other. Maybe a z-index that blocks clicks, or a color that only breaks at certain widths.</p>
+        </div>
+        <div class="ideacard">
+          <span class="ideatag">HTML</span>
+          <div class="ideatitle">Hidden elements</div>
+          <p>A div with display:none that contains a secret message. Or a data attribute with a flag. Or a comment with a clue.</p>
+        </div>
+        <div class="ideacard">
+          <span class="ideatag" style="background:#33d6a6">JS</span>
+          <div class="ideatitle">Console secrets</div>
+          <p>Log something to the console that only shows up when someone actually opens DevTools. Classic.</p>
+        </div>
+        <div class="ideacard">
+          <span class="ideatag" style="background:#ff8c37">UX</span>
+          <div class="ideatitle">Broken interactions</div>
+          <p>A button that does the wrong thing. A form that submits to nowhere. A link that looks right but goes somewhere unexpected.</p>
+        </div>
+        <div class="ideacard">
+          <span class="ideatag" style="background:#5bc0de">A11Y</span>
+          <div class="ideatitle">Accessibility gaps</div>
+          <p>Missing alt text, no keyboard navigation, bad contrast. Real bugs that members can learn to fix properly.</p>
+        </div>
+        <div class="ideacard">
+          <span class="ideatag">ANY</span>
+          <div class="ideatitle">Other</div>
+          <p>These are just a few stuff that might be there. The weirder the website, the better and fun.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="scanline"></div>
+
+  <section class="sectionalt" id="faq">
+    <div class="sectioninner">
+      <div class="sectionlabel">Frequently Asked Questions</div>
+      <div class="notes">
+        <div class="notecard">
+          <h3>What even is this?</h3>
+          <p>A scavenger hunt for code. Club leaders build websites with intentional bugs and hidden stuff. Club members find and fix them by submitting PRs.</p>
+        </div>
+        <div class="notecard">
+          <h3>Do I need to know how to code?</h3>
+          <p>A little bit helps. But if you can right-click and hit "Inspect," you can start finding stuff. You will learn the rest along the way.</p>
+        </div>
+        <div class="notecard">
+          <h3>What counts as a "find"?</h3>
+          <p>Bugs, broken features, accessibility issues, hidden content, console messages, data attributes with flags. If it's wrong or hidden, it counts.</p>
+        </div>
+        <div class="notecard" style="border-color: rgba(236,55,80,0.25)">
+          <h3>What's the reward?</h3>
+          <p>Merged PRs earn grants through PullQuests. It's a YSWS (You Ship, We Send) program by Hack Club.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="glitchbar"></div>
+
+<footer id="footer">
+  <div class="footinner">
+    <span>Eggsploit - a <a href="https://pullquests.hackclub.com" target="_blank">PullQuests</a> program by <a href="https://hackclub.com" target="_blank">Hack Club</a></span>
+    <span>
+      <a href="https://github.com/hackclub" target="_blank">GitHub</a> ·
+      <a href="https://hackclub.com/slack" target="_blank">Slack</a> ·
+      <a href="https://hackclub.com" target="_blank">hackclub.com</a>
+    </span>
+    <span class="chickenegg" title="bawk?">🐔</span>
+  </div>
+</footer>
+
+<div class="chickenoverlay" id="chickenoverlay">
+  <img src="/assets/chicken-on-tree.jpg" alt="chicken on a tree">
+</div>
+
+<script type="module" src="/main.js"></script>
+
+</body>
+</html>
