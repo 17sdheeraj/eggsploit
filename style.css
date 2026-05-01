@@ -535,6 +535,17 @@ h1 {
   line-height: 1.6;
 }
 
+.notecard ul {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.notecard li + li {
+  margin-top: 8px;
+}
+
 footer {
   background: #08080d;
   border-top: 1px solid rgba(255,255,255,0.04);
